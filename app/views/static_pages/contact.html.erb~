@@ -1,0 +1,4 @@
+<% provide(:title,"Contact")%>
+<h1>Contact</h1>
+<h3>Nguyen Thanh Trung</h3>
+<a href="https://github.com/trungnt-hedspi/">Github</a>

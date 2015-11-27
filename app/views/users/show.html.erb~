@@ -6,8 +6,6 @@
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
-	<h1>This is your blog's list</h1>
-	<%= link_to "My Blog", controller: "posts" %>
     </section>
   </aside>
 </div>
