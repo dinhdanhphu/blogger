@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
 #  http_basic_authenticate_with name: "dhh", password: "secret", only: :destroy
-  before_action :logged_in_user, only: [:create, :edit, :update]
-  before_action :correct_user,   only: [:create, :edit, :update]
+  before_filter :logged_in_user, only: [:create, :edit, :update]
+# before_filter :correct_user,   only: [:create, :edit, :update]
   def create
     @post = Post.find(params[:post_id])
     @comment = @post.comments.create(comment_params)

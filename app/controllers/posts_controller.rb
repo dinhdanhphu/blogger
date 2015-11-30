@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-  http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+#  http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
   before_action :logged_in_user, only: [:create, :edit, :update]
   before_action :correct_user,   only: [:create, :edit, :update]
 

@@ -1,0 +1,13 @@
+<% provide(:title, 'All users') %>
+<h1>All user</h1>
+
+<%= will_paginate %>
+
+<ul class="users">
+
+  <h1>This is your blog's list</h1>
+    <%= link_to "My Blog", controller: "posts" %>
+  <%= render @users %>
+</ul>
+
+<%= will_paginate %>
