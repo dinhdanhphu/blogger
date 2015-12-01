@@ -32,6 +32,8 @@ gem 'spring'
 gem 'will_paginate',           '3.0.7'
 group :development do
   gem 'sqlite3'
+  gem 'better_errors'
+  gem "binding_of_caller"
 end
 
 group :production do
